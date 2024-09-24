@@ -65,6 +65,8 @@
 
 ###### The /config directory holds configuration files for the app.
 ######
+######    Database.php:
+######    Contains the database connection
 ######    config.php:
 ######    Contains the database configuration (host, username, password, and database name). This is where the application connects to the MySQL database.
 ######

@@ -1,3 +1,4 @@
+<?php require_once "../app/controllers/TaskController.php"; ?>
 <!DOCTYPE html>
 <html lang="en">
 
@@ -8,7 +9,7 @@
 </head>
 
 <body>
-    <?php echo "Hello To PHP !" ?>
+
 </body>
 
 </html>
