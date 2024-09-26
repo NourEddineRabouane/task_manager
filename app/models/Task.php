@@ -40,11 +40,20 @@ class Task
         return $this->result;
     }
 
-    public function updateTask($id, $title, $comment)
+    public function updateTask($id, $title, $comment, $time_start, $time_end)
     {
-        $this->query = "UPDATE tasks SET title=? , comment=? , created_at=NOW()
+        $this->query = "UPDATE tasks SET title=? , comment=? , time_start=? , time_end=? ,created_at=NOW()
         WHERE id=?";
-        $this->result = $this->db->query($this->query, [$title, $comment, $id]);
-        return $this->result;
+        $this->result = $this->db->query($this->query, [$title, $comment, $time_start, $time_end, $id]);
+    }
+    public function taskDone($id)
+    {
+        $this->query = "UPDATE tasks SET isDone=1 WHERE id=?";
+        $this->result = $this->db->query($this->query, [$id]);
+    }
+    public function taskNotDone($id)
+    {
+        $this->query = "UPDATE tasks SET isDone=0 WHERE id=?";
+        $this->result = $this->db->query($this->query, [$id]);
     }
 }
