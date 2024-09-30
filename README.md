@@ -32,6 +32,8 @@
 
 ##### │ ├── /models # Contains the logic to interact with the database
 
+##### │ ├── /partials # Contains the parts that is inluded in most of pages like the nav bar
+
 ##### │ └── /views # HTML and UI templates for rendering data
 
 ##### │

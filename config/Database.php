@@ -1,4 +1,5 @@
 <?php
+
 // Define Database connection
 class Database
 {
