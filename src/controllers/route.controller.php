@@ -5,22 +5,20 @@ $routes = require_once BASE_CFG . "/routes.php";
 
 $uri = parse_url($_SERVER['REQUEST_URI'], PHP_URL_PATH);
 
-// Simple routing logic
+// Check wich page to load based on the URL
 if ($uri === '/') {
 
-    require_once BASE_SRC . "/views/" . $routes['home']; // Load home view
-
+    require_once BASE_SRC . "/controllers/" . $routes['home'];
 } elseif ($uri === '/about') {
 
-    require_once BASE_SRC . "/views/" . $routes['about']; // Load home view
-
+    require_once BASE_SRC . "/controllers/" . $routes['about'];
 } elseif ($uri === '/dashboard') {
 
-    require_once BASE_SRC . '/views/' . $routes['dashboard'];
+    require_once BASE_SRC . '/controllers/' . $routes['dashboard'];
 } else {
 
     // For debugging
     echo "Requested URI: " . htmlspecialchars($uri);
-    echo "404 Not Found"; // Handle not found
+    echo " <h1>404 Not Found</h1>"; // Handle not found
 
 }
