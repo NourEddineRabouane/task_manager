@@ -1,14 +1,3 @@
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
-
-body {
-    background: #c9c8c8;
-    color: rgb(51, 51, 51);
-}
-
 /* Style the nav container */
 #nav {
     width: 200px;

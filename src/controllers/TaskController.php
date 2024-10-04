@@ -10,7 +10,6 @@ require_once __DIR__ . "/../models/Task.php";
 $db = new Database($config["database"]);
 $task = new Task($db);
 
-echo "hi";
 
 function dd($arg)
 {

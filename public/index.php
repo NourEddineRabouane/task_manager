@@ -1,9 +1,15 @@
 <?php
-// Do not use cache to ensure loading the changes 
-header("Cache-Control: no-cache, must-revalidate"); // HTTP 1.1
+// Prevent caching (use cautiously in production)
+header("Cache-Control: no-cache, must-revalidate");
 header("Pragma: no-cache");
-//
+
+// CORS headers (restrict in production)
 header("Access-Control-Allow-Origin: *");
-// 
-require __DIR__ . "/../src/controllers/TaskController.php";
-require_once __DIR__ . "/../src/views/home.view.php";
+
+// Base path to simplify requires
+define('BASE_SRC', realpath(__DIR__ . '/../src/'));
+define('BASE_CFG', realpath(__DIR__ . '/../config/'));
+
+require_once BASE_SRC . "/controllers/TaskController.php";
+require_once BASE_SRC . "/controllers/routeController.php";
+

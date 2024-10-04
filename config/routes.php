@@ -1,7 +1,7 @@
 <?php
 
 return [
-    "home" => "/",
-    "dashboard" => "src/views/dashboard.view.php",
-    "task" => "/",
+    "home" => "home.view.php",
+    "dashboard" => "dashboard.view.php",
+    "about" => "about.view.php",
 ];
