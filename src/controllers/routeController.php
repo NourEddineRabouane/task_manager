@@ -1,5 +1,8 @@
 <?php
+define("BASE_PARTIAL", "/../partials/");
+
 $routes = require_once BASE_CFG . "/routes.php";
+
 $uri = parse_url($_SERVER['REQUEST_URI'], PHP_URL_PATH);
 
 // Simple routing logic

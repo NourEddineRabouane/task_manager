@@ -11,7 +11,7 @@
 </head>
 
 <body>
-    this is about dashboar
+    this is  dashboard page
     <?php require_once BASE_SRC . "/partials/navbar.php" ?>
 </body>
 

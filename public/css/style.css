@@ -7,5 +7,46 @@
 body {
     background: #c9c8c8;
     color: rgb(51, 51, 51);
-    padding-left: 200px;
+    padding-left: 202px;
 }
+
+/* logo style */
+/* Container for the logo text */
+.logo {
+    font-family: "Poppins", sans-serif; /* Police élégante */
+    font-size: 1.5rem; /* Taille du texte */
+    font-weight: 700; /* Met le texte en gras */
+    color: #beb2b2; /* Couleur principale du logo */
+    text-transform: uppercase; /* Met le texte en majuscules */
+    letter-spacing: 2px; /* Espacement entre les lettres */
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3); /* Ombre portée */
+    position: absolute;
+    top: 4px;
+    left: 4px;
+    cursor: pointer;
+    transition: color 0.3s ease-in-out;
+}
+
+/* Hover effect */
+.logo:hover {
+    color: #007bff; /* Change la couleur au survol */
+}
+
+/* Optional decorative underline */
+.logo::after {
+    content: "";
+    position: absolute;
+    bottom: -5px; /* Position en dessous du texte */
+    left: 0;
+    width: 100%;
+    height: 3px;
+    background-color: #007bff; /* Couleur de la ligne sous le texte */
+    opacity: 0;
+    transition: opacity 0.3s ease-in-out;
+}
+
+.logo:hover::after {
+    opacity: 1; /* Fait apparaître la ligne sous le texte au survol */
+}
+
+/* end logo style */

@@ -12,12 +12,10 @@
 </head>
 
 <body>
-
+    this is home page !
     <!-- navigation bar -->
     <?php include_once __DIR__ . "/../partials/navbar.php" ?>
-    <div id="header">
-        <h1>My website</h1>
-    </div>
+
     <!-- Include the js file -->
     <script src="/js/home/home.js"></script>
 </body>
