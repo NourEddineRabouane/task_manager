@@ -1,8 +1,8 @@
 
 <div class="nav-wrapper">
-    <div class="logo">
+    <!-- <div class="logo">
         OrganizeMe
-    </div>
+    </div> -->
     <nav id="nav">
         <ul>
             <li><a href="/">Home</a></li>
