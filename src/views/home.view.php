@@ -7,7 +7,10 @@
     <!-- Include the style file -->
     <link rel="stylesheet" href="/css/nav.css" />
     <link rel="stylesheet" href="/css/style.css">
-
+    <?php
+    // For icones
+    require_once BASE_SRC . "/partials/icones.php"
+    ?>
     <title>Document</title>
 </head>
 
