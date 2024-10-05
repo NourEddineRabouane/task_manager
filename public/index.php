@@ -1,7 +1,7 @@
 
 <?php 
 // require "../src/controllers/TaskController.php";
-require "../src/views/home.php";
+// require "../src/views/home.php";
 // 
 
 
@@ -16,5 +16,5 @@ header("Access-Control-Allow-Origin: *");
 define('BASE_SRC', realpath(__DIR__ . '/../src/'));
 define('BASE_CFG', realpath(__DIR__ . '/../config/'));
 
-require_once BASE_SRC . "/controllers/task.controller.php";
+// require_once BASE_SRC . "/controllers/task.controller.php";
 require_once BASE_SRC . "/controllers/route.controller.php";
