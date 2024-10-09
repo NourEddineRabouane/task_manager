@@ -7,12 +7,15 @@
     <!-- Include the style file -->
     <link rel="stylesheet" href="/css/nav.css" />
     <link rel="stylesheet" href="/css/style.css">
-
+    <?php
+    // For icones
+    require_once BASE_SRC . "/partials/icones.php"
+    ?>
     <title>Document</title>
 </head>
 
 <body>
-    this is home page !
+    this is the home page !
     <!-- navigation bar -->
     <?php include_once __DIR__ . "/../partials/navbar.php" ?>
 
