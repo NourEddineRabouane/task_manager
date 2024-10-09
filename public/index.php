@@ -1,4 +1,5 @@
 <?php
+// Main file
 // Prevent caching (use cautiously in production)
 header("Cache-Control: no-cache, must-revalidate");
 header("Pragma: no-cache");
