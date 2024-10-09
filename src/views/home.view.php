@@ -16,6 +16,8 @@
 
 <body>
     this is home page !
+
+    Noureddine wrote this .....
     <!-- navigation bar -->
     <?php include_once __DIR__ . "/../partials/navbar.php" ?>
 
