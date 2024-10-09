@@ -15,6 +15,10 @@ if ($uri === '/') {
 } elseif ($uri === '/dashboard') {
 
     require_once BASE_SRC . '/controllers/' . $routes['dashboard'];
+}
+ elseif ($uri === '/dailytasks') {
+
+    require_once BASE_SRC . '/controllers/' . $routes['dailytasks'];
 } else {
 
     // For debugging

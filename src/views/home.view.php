@@ -18,7 +18,7 @@
     this is the home page !
     <!-- navigation bar -->
     <?php include_once __DIR__ . "/../partials/navbar.php" ?>
-
+    
     <!-- Include the js file -->
     <script src="/js/home/home.js"></script>
 </body>
