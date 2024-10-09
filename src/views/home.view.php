@@ -16,6 +16,7 @@
 
 <body>
     this is home page !
+    this added by brwn hhhhhhhh
     <!-- navigation bar -->
     <?php include_once __DIR__ . "/../partials/navbar.php" ?>
 
