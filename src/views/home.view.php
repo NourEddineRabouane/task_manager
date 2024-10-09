@@ -15,13 +15,12 @@
 </head>
 
 <body>
-<<<<<<< HEAD
-    this is the home page !
-=======
+
+
     this is home page !
 
     Noureddine wrote this .....
->>>>>>> 4a822294c81e48e68332efe12ce03fc12db223c9
+
     <!-- navigation bar -->
     <?php include_once __DIR__ . "/../partials/navbar.php" ?>
     
