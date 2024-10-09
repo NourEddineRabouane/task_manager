@@ -9,9 +9,9 @@ class Database
     public function __construct($config, $user = 'root', $password = '')
     {
         $this->dsn = "mysql:" . http_build_query($config, '', ';');
-        // $this->connection = new PDO($this->dsn, $user, $password, [PDO::ATTR_DEFAULT_FETCH_MODE => PDO::FETCH_ASSOC]);
+        $this->connection = new PDO($this->dsn, $user, $password, [PDO::ATTR_DEFAULT_FETCH_MODE => PDO::FETCH_ASSOC]);
     }
-    // Method tha takes the query and params and return imidiatlly the result
+    // Method that takes the query and params and return imidiatlly the result
     public function query($query, $params = null)
     {
         try {

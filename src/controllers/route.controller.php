@@ -1,8 +1,8 @@
 <?php
 define("BASE_PARTIAL", "/../partials/");
-
+// Get the list of routes
 $routes = require_once BASE_CFG . "/routes.php";
-
+// Get the request URi
 $uri = parse_url($_SERVER['REQUEST_URI'], PHP_URL_PATH);
 
 // Check wich page to load based on the URL
@@ -15,8 +15,7 @@ if ($uri === '/') {
 } elseif ($uri === '/dashboard') {
 
     require_once BASE_SRC . '/controllers/' . $routes['dashboard'];
-}
- elseif ($uri === '/dailytasks') {
+} elseif ($uri === '/dailytasks') {
 
     require_once BASE_SRC . '/controllers/' . $routes['dailytasks'];
 } else {
