@@ -20,11 +20,14 @@
     this is home page !
 
 
+
     Noureddine wrote this .....
 
 
     changedby  2222
   
+
+    this added by brwn hhhhhhhh
     <!-- navigation bar -->
     <?php include_once __DIR__ . "/../partials/navbar.php" ?>
     
