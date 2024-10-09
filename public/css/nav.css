@@ -2,12 +2,9 @@
 .nav-wrapper {
     width: 9vh;
     height: 100vh; /* Full viewport height */
-<<<<<<< HEAD
-    background-color: #a9bacc; /* Dark blue background */
-=======
+    /* background-color: #a9bacc; Dark blue background */
     background:linear-gradient(to right, rgb(255, 136, 0), rgb(255, 230, 0)); /* Dark blue background */
->>>>>>> abdelmalek
-    position: fixed; /* Stick it to the left */
+    position: fixed;
     top: 0;
     left: 0;
     display: flex;
@@ -52,11 +49,7 @@ i {
 
 /* Add hover effect to anchor tags */
 #nav ul li a:hover {
-<<<<<<< HEAD
     background-color: #fff; /* Turquoise on hover */
-=======
-    background-color: #000000; /* Turquoise on hover */
->>>>>>> abdelmalek
     color: white;
 }
 .icon-1{
