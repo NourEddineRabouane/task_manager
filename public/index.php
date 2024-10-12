@@ -1,9 +1,4 @@
-
-
-<?php 
-
-
-
+<?php
 // Main file
 
 // Prevent caching (use cautiously in production)
@@ -19,3 +14,10 @@ define('BASE_CFG', realpath(__DIR__ . '/../config/'));
 
 // require_once BASE_SRC . "/controllers/task.controller.php";
 require_once BASE_SRC . "/controllers/route.controller.php";
+
+function dd($var)
+{
+    echo '<pre/>';
+    print_r( $var);
+    echo '<pre/>';
+}

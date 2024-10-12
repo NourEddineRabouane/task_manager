@@ -1,25 +1,27 @@
 /* Style the nav container */
 .nav-wrapper {
-    width: 9vh;
-    height: 100vh; /* Full viewport height */
-    /* background-color: #a9bacc; Dark blue background */
-    background:linear-gradient(to right, rgb(255, 136, 0), rgb(255, 230, 0)); /* Dark blue background */
+    width: 40px;
+    height: 100vh;
+    background: linear-gradient(to right, rgb(255, 136, 0), rgb(255, 230, 0));
     position: fixed;
     top: 0;
     left: 0;
     display: flex;
-    /* align-items: center; */
     justify-content: space-between;
-    /* gap: ; */
+    overflow: hidden;
+    transition: width 0.6s;
+}
 
+/* Expan the with when hover the nav */
+.nav-wrapper:hover {
+    width: 200px;
 }
-i {
-    color: #e74c3c;
-}
+
+
 #nav {
     width: 100%;
     display: flex;
-    align-items:start;
+    /* align-items: start; */
 }
 
 /* Style the unordered list inside the nav */
@@ -30,12 +32,14 @@ i {
 
 /* Style the list items */
 #nav ul li {
-    width: 100%;
-    margin-bottom: 10px;
+    /* width: 100%; */
+    /* margin-bottom: 10px; */
+    border-bottom: #fff 1px solid;
 }
 
 /* Style the anchor tags inside the list items */
 #nav ul li a {
+    width: 200px;
     display: block;
     padding: 15px;
     text-decoration: none;
@@ -50,15 +54,22 @@ i {
 /* Add hover effect to anchor tags */
 #nav ul li a:hover {
     background-color: #fff; /* Turquoise on hover */
-    color: white;
+    color: #909090;
 }
-.icon-1{
+
+.icon-1 {
     background-color: white;
-    height:50px;
+    height: 50px;
     width: 50px;
 }
 /* Active link styling */
 #nav ul li a.active {
     background-color: #e74c3c; /* Red for active link */
     color: white;
+}
+
+/* style for the icones */
+#nav ul li a i {
+    width: 20px;
+    aspect-ratio: 1/1;
 }
