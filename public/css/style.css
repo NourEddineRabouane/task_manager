@@ -20,7 +20,7 @@ body {
     text-transform: uppercase; /* Met le texte en majuscules */
     letter-spacing: 2px; /* Espacement entre les lettres */
     text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3); /* Ombre portée */
-    position: absolute;
+    /* position: block; */
     top: 4px;
     left: 4px;
     cursor: pointer;

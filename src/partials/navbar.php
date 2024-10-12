@@ -1,7 +1,15 @@
 <div class="nav-wrapper">
-    <!-- <div class="logo">
-        OrganizeMe
-    </div> -->
+    <div class="logo-container">
+        <span class="logo-text">
+            <span class="highlight">
+                <img src="/assets/logo.png" alt="">
+            </span>
+            rganize
+            <span class="highlight">
+                Me
+            </span>
+        </span>
+    </div>
     <nav id="nav">
         <ul>
 
