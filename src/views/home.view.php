@@ -1,67 +1,75 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <!-- Include the style file -->
-    <link rel="stylesheet" href="/css/nav.css" />
-    <link rel="stylesheet" href="/css/style.css">
-    <?php
-    // For icones
-    
-    require_once BASE_SRC . "/partials/icones.php"
-    ?>
-    <style>
-        body {
-            margin: 0;
-            overflow: hidden; /* Hides scrollbar */
-        }
-        video {
-            position: absolute;
-            top: 50%;
-            left: 50%;
-            transform: translate(-50%, -50%);
-            width: 100%; /* Adjust as needed */
-            height: auto; /* Maintain aspect ratio */
-            z-index: -1; /* Send to back */
-        }
-        .content {
-            position: relative;
-            z-index: 1; /* Bring content to front */
-            color: white; /* Adjust based on your video */
-            text-align: center;
-            padding: 20px;
-        }
-    </style>
-    <title>Document</title>
-</head>
-
-<body>
-
-
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Autoplay Video Example</title>
   
-    <!-- navigation bar -->
-    <?php include_once __DIR__ . "/../partials/navbar.php" ?>
-    
-    <!-- Include the js file -->
-    <video autoplay muted>
-        <source src="C:\Users\abdoa\Downloads\relo.mp4" type="video/mp4">
-        Your browser does not support the video tag.
+  <style>
+    /* Reset browser defaults */
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    /* Fullscreen video container */
+    .video-container {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      background-color: black;
+      z-index: 10;
+      overflow: hidden;
+    }
+
+    video {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+
+    /* Hide main content initially */
+    .hidden {
+      display: none;
+    }
+
+    /* Show main content when ready */
+    .show {
+      display: block;
+    }
+  </style>
+</head>
+<body>
+  <!-- Fullscreen Video -->
+  <div class="video-container">
+    <video id="introVideo" autoplay muted playsinline>
+    <source src="https://www.dropbox.com/scl/fi/kexaxrrknwcbqufv1egno/relo.mp4" type="video/mp4">
+      Your browser does not support the video tag.
     </video>
+  </div>
 
-    <div class="content">
-        <h1>Welcome to My Page!</h1>
-        <p>This is some content overlaying the video.</p>
-    </div>
+  <!-- Main Content -->
+  <div id="mainContent" class="hidden">
+    <h1>Welcome to the Website</h1>
+    <p>Thank you for visiting!</p>
+  </div>
 
-    <script>
-        window.onload = function() {
-            const video = document.querySelector('video');
-            video.play();
-        };
-    </script>
-    <script src="/js/home/home.js"></script>
+  <script>
+    // Get elements
+    const video = document.getElementById('introVideo');
+    const mainContent = document.getElementById('mainContent');
+
+    // When the video finishes, hide it and show the main content
+    video.addEventListener('ended', () => {
+      video.parentElement.style.display = 'none'; // Hide video container
+      mainContent.classList.add('show'); // Show main content
+    });
+  </script>
 </body>
-
 </html>
