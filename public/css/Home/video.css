@@ -1,0 +1,50 @@
+                          
+                          
+                          /* loading screan */
+  
+  /* Fullscreen video container */
+  .splash-screen {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background-color: black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1000; /* Make sure it's above all other content */
+    overflow: hidden;
+  }
+  
+  .splash-screen video {
+    width: 40%;
+    height: 40%;
+    object-fit: center; /* Ensure the video covers the entire screen */
+    background-color: black;
+  }
+  
+  /* Fade-out animation */
+  .fade-out {
+    animation: fadeOut 1s forwards;
+  }
+  
+  /* Main content hidden initially */
+  .hidden {
+    display: none;
+  }
+  
+  /* Show content when ready */
+  .show {
+    display: block;
+  }
+  
+  /* Keyframes for fade-out animation */
+  @keyframes fadeOut {
+    from {
+      opacity: 1;
+    }
+    to {
+      opacity: 0;
+    }
+  }
