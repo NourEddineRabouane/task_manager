@@ -22,7 +22,7 @@
 
     <div id="splash" class="splash-screen">
         <video id="splashVideo" autoplay muted playsinline>
-            <source src="https://res.cloudinary.com/dd04rtxkp/video/upload/v1728764589/WhatsApp_Video_2024-10-12_at_21.18.55_b234a9e1_yrglvk.mp4" type="video/mp4">
+            <source src="https://res.cloudinary.com/dd04rtxkp/video/upload/v1728810813/loading_iqtxgr.mp4" type="video/mp4">
             Your browser does not support the video tag.
         </video>
     </div>

@@ -1,13 +1,7 @@
 <div class="nav-wrapper">
     <div class="logo-container">
         <span class="logo-text">
-            <span class="highlight">
-                <img src="/assets/logo.png" alt="">
-            </span>
-            rganize
-            <span class="highlight">
-                Me
-            </span>
+            <img src="/assets/logo-image.png" alt="">
         </span>
     </div>
     <nav id="nav">
